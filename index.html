@@ -312,7 +312,9 @@
               <span class="author-block">
                 <a href="https://bk123477.github.io/" target="_blank" rel="noopener">Minki Hong</a><sup>*</sup>,&nbsp;
               </span>
-              <span class="author-block">Yi Zhou,&nbsp;</span>
+              <span class="author-block"              
+              <a href="https://www.linkedin.com/in/yi-z-b9698ba0/" target="_blank" rel="noopener"><a herf>Yi Zhou</a><sup>*</sup>,&nbsp;
+              
               <span class="author-block">
                 <a href="https://kimjunseo.com/" target="_blank" rel="noopener">Junseo Kim</a>,&nbsp;
               </span>
@@ -339,8 +341,6 @@
               <span class="author-block">Carnegie Mellon University &middot; Dongguk University &middot; Delft University of Technology &middot; Johns Hopkins University School of Medicine &middot; University of Minnesota Twin Cities</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
             </div>
-            <p class="is-size-6 has-text-weight-semibold mt-2">Status: Under Review</p>
-            <p class="subtitle is-5 mt-4">A unified cultural audit of text-to-image and image-to-image models across six countries, eight domains, and era-aware prompts.</p>
             <div class="publication-links">
               <span class="link-block">
                 <a href="https://arxiv.org/submit/6893026/view" target="_blank"
@@ -360,12 +360,11 @@
                   <span>Code &amp; Data</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/seochan99/ecb-datasets" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+              <span class="link-block has-tooltip has-tooltip-arrow has-tooltip-bottom" data-tooltip="Coming soon">
+                <button class="external-link button is-normal is-rounded is-dark is-disabled" disabled>
                   <span class="icon" aria-hidden="true">🤗</span>
                   <span>Hugging Face</span>
-                </a>
+                </button>
               </span>
             </div>
           </div>
@@ -398,7 +397,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Generative image models deliver striking visuals yet routinely misrepresent culture. We assemble a unified benchmark spanning six countries, eight cultural categories, and 36 subcategories with traditional, modern, and era-agnostic prompts to audit both text-to-image generation and image-to-image editing. Using open models with fixed configurations, we pair standard automatic scores with a retrieval-augmented, culture-aware metric and native-expert reviews to obtain comparable diagnostics. The study exposes Global-North defaults, iterative edits that erode cultural fidelity despite flat CLIP and aesthetic scores, and shortcut strategies that rely on palette shifts or generic props instead of contextually faithful transformations. We release the complete image corpus, prompts, and configurations so researchers can reproduce our pipeline and track cultural progress in generative systems.
+            Generative image models produce striking visuals yet often misrepresent culture. Prior work has probed cultural dimensions primarily in text-to-image (T2I) systems, leaving image-to-image (I2I) editors largely underexamined. We close this gap with a unified, reproducible evaluation spanning six countries, an 8-category/36-subcategory schema, and era-aware prompts, auditing both T2I generation and I2I editing under a standardized, reproducible protocol that yields comparable model-level diagnostics.
+          </p>
+          <p>
+            Using open models with fixed configurations, we derive comparable diagnostics across countries, eras, and categories for both T2I and I2I. Our evaluation combines standard automatic measures, a culture-aware metric that integrates retrieval-augmented VQA with curated knowledge, and expert human judgments collected on a web platform from country-native reviewers. To enable downstream analyses without re-running compute-intensive pipelines, we release the complete image corpus from both studies alongside prompts and settings.
+          </p>
+          <p>
+            Our study reveals three recurring findings. First, under country-agnostic prompts, models default to Global-North, modern-leaning depictions and flatten cross-country distinctions, reducing separability between culturally distinct neighbors despite fixed schema and era controls. Second, iterative I2I editing erodes cultural fidelity even when conventional metrics remain flat or improve; by contrast, expert ratings and our culture-aware metric both register this degradation. Third, I2I models tend to apply superficial cues (palette shifts, generic props) rather than context- and era-consistent changes, frequently retaining source identity for Global-South targets and drifting toward non-photorealistic styles; attribute-addition trials further expose weak text rendering and brittle handling of fine, culture-specific details. Taken together, these results indicate that culture-sensitive edits remain unreliable in current systems. By standardizing prompts, settings, metrics, and human evaluation protocols—and releasing all images and configurations—we offer a reproducible, culture-centered pipeline for diagnosing and tracking progress in generative image research. Project page: <a href="https://seochan99.github.io/ECB/" target="_blank">https://seochan99.github.io/ECB/</a>
           </p>
         </div>
       </div>
