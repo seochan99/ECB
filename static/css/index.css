@@ -748,6 +748,49 @@ a:focus {
     box-shadow: none !important;
   }
 }
+.hero .carousel .item {
+  text-align: center;
+}
 
+#results-carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+  padding: 1.5rem;
+}
 
+#results-carousel .item img {
+  margin: 0 auto;
+  width: auto;
+  object-fit: contain;
+}
+
+#results-carousel .item-portrait img {
+  max-height: 340px;
+}
+
+#results-carousel .item-landscape img {
+  max-height: 260px;
+}
+
+#results-carousel .item .subtitle {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #results-carousel .item {
+    min-height: 360px;
+  }
+
+  #results-carousel .item-portrait img {
+    max-height: 260px;
+  }
+
+  #results-carousel .item-landscape img {
+    max-height: 200px;
+  }
+}
 
