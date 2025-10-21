@@ -12,4 +12,4 @@ This repository hosts the project page for **“Exposing Blindspots: Cultural Bi
 
 ## Contact
 
-Questions? Ping `chans@andrew.cmu.edu`.
+`chans@andrew.cmu.edu`.
