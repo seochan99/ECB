@@ -4,7 +4,7 @@ This repository hosts the project page for **“Exposing Blindspots: Cultural Bi
 
 ## Quick Links
 
-- Website: https://cmubig.github.io/ECB/
+- Website: https://seochan99.github.io/ECB/
 - Paper (PDF): `static/pdfs/Exposing Blindspot.pdf`
 - arXiv submission: https://arxiv.org/submit/6893026/view
 - Code & evaluation assets: https://github.com/cmubig/ECB
