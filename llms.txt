@@ -1,0 +1,58 @@
+# Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models
+
+> Paper by Huichan Seo*, Sieun Choi*, Minki Hong*, Yi Zhou, Junseo Kim, Lukman Ismaila, Naome Etori, Mehul Agarwal, Zhixuan Liu, Jihie Kim, Jean Oh
+> Institutions: Carnegie Mellon University, Dongguk University, Delft University of Technology, Johns Hopkins University School of Medicine, University of Minnesota Twin Cities
+> arXiv: https://arxiv.org/abs/2510.20042
+> Project Page: https://cmubig.github.io/ECB/
+> Dataset: https://huggingface.co/datasets/seochan99/ecb-datasets
+
+## Summary
+
+This paper presents a unified, reproducible cultural bias evaluation spanning six countries (US, India, Japan, Korea, Nigeria, Mexico), eight categories, and 36 subcategories with era-aware prompts. It audits both text-to-image (T2I) generation and image-to-image (I2I) editing, combining automatic measures, a culture-aware metric (retrieval-augmented VQA), and expert human judgments from country-native reviewers.
+
+## Key Findings
+
+- **Global-North defaults**: Country-agnostic prompts converge to U.S.-centric, modern aesthetics even with controlled schema and era cues, flattening cross-country distinctions.
+- **Metric-human gap**: CLIPScore and aesthetic metrics remain stable while the culture-aware signal and native raters flag rapid semantic drift during iterative editing.
+- **Shortcut editing**: Iterative I2I edits substitute palette shifts and flags for genuine cultural attributes, often retaining source identity for Global-South targets.
+- **Demographic skew**: Gender-neutral occupation prompts surface male dominance and light skin tones across all models tested.
+
+## Culture-Aware Metric
+
+A retrieval-augmented VQA metric that integrates Wikipedia-derived cultural knowledge via FAISS retrieval with Qwen2 models. Achieves 74% agreement with native reviewers on best selections and 84% on worst selections.
+
+## Evaluation Protocol
+
+- **Countries**: United States, India, Japan, Korea, Nigeria, Mexico
+- **Schema**: 8 categories, 36 subcategories
+- **Eras**: Traditional, Modern, Era-agnostic prompts
+- **T2I Models**: FLUX.1-dev, Stable Diffusion 3.5 Large, DALL-E 3
+- **I2I Models**: FLUX.1-dev, Step1X-Edit
+- **I2I Studies**: Multi-loop editing (5 iterations), Attribute addition, Cross-country restyling
+- **Human evaluation**: Country-native expert reviewers via custom web platform
+
+## Three I2I Editing Studies
+
+1. **Multi-loop editing**: Five successive cultural instructions cause outputs to collapse to homogenized wedding aesthetics regardless of target locale.
+2. **Attribute addition**: Stepwise attribute additions reveal weak text rendering and brittle handling of culture-specific details.
+3. **Cross-country restyling**: Models rely on superficial palette swaps while leaving Global-South identities largely unchanged.
+
+## Released Assets
+
+- Complete image corpus from both T2I and I2I studies
+- All prompts with era-aware variants
+- Model execution configurations
+- Human evaluation survey platform
+- Culture-aware metric implementation
+
+## Citation
+
+```bibtex
+@article{seo2025exposing,
+  title={Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models},
+  author={Seo, Huichan and Choi, Sieun and Hong, Minki and Zhou, Yi and Kim, Junseo and Ismaila, Lukman and Etori, Naome and Agarwal, Mehul and Liu, Zhixuan and Kim, Jihie and Oh, Jean},
+  journal={arXiv preprint arXiv:2510.20042},
+  year={2025},
+  url={https://arxiv.org/abs/2510.20042}
+}
+```

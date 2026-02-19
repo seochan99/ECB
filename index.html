@@ -41,7 +41,7 @@
   <meta name="twitter:image:alt" content="Cultural bias examples across six countries.">
   <meta name="twitter:url" content="https://cmubig.github.io/ECB/">
 
-  <!-- Academic/Research Specific -->
+  <!-- Academic/Research Specific (Google Scholar Highwire Press tags) -->
   <meta name="citation_title" content="Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models">
   <meta name="citation_author" content="Seo, Huichan">
   <meta name="citation_author" content="Choi, Sieun">
@@ -54,9 +54,12 @@
   <meta name="citation_author" content="Liu, Zhixuan">
   <meta name="citation_author" content="Kim, Jihie">
   <meta name="citation_author" content="Oh, Jean">
-  <meta name="citation_publication_date" content="2025">
-  <meta name="citation_conference_title" content="Preprint">
-  <meta name="citation_pdf_url" content="https://cmubig.github.io/ECB/static/pdfs/Exposing%20Blindspot.pdf">
+  <meta name="citation_publication_date" content="2025/10/20">
+  <meta name="citation_journal_title" content="arXiv preprint arXiv:2510.20042">
+  <meta name="citation_arxiv_id" content="2510.20042">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2510.20042">
+  <meta name="citation_abstract_html_url" content="https://cmubig.github.io/ECB/">
+  <meta name="citation_language" content="en">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -104,139 +107,99 @@
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
   
-  <!-- Structured Data for Academic Papers -->
+  <!-- Structured Data: ScholarlyArticle -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
+    "@id": "https://cmubig.github.io/ECB/#article",
+    "mainEntityOfPage": "https://cmubig.github.io/ECB/",
+    "url": "https://cmubig.github.io/ECB/",
+    "sameAs": [
+      "https://arxiv.org/abs/2510.20042",
+      "https://huggingface.co/datasets/seochan99/ecb-datasets"
+    ],
     "headline": "Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models",
     "description": "Unified audit of text-to-image and image-to-image models across six countries exposes cultural blindspots and releases reproducible evaluation assets.",
+    "image": "https://cmubig.github.io/ECB/static/images/introduction/intro.png",
     "author": [
-      {
-        "@type": "Person",
-        "name": "Huichan Seo",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Carnegie Mellon University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Sieun Choi",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Dongguk University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Minki Hong",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Dongguk University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Yi Zhou",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Carnegie Mellon University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Junseo Kim",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Delft University of Technology"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Lukman Ismaila",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Johns Hopkins University School of Medicine"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Naome Etori",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Minnesota Twin Cities"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Mehul Agarwal",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Carnegie Mellon University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Zhixuan Liu",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Carnegie Mellon University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Jihie Kim",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Dongguk University"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Jean Oh",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Carnegie Mellon University"
-        }
-      }
+      {"@type": "Person", "name": "Huichan Seo", "url": "https://huichanseo.com/", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Sieun Choi", "url": "https://linkedin.com/in/sieunchoi/", "affiliation": {"@type": "Organization", "name": "Dongguk University"}},
+      {"@type": "Person", "name": "Minki Hong", "url": "https://bk123477.github.io/", "affiliation": {"@type": "Organization", "name": "Dongguk University"}},
+      {"@type": "Person", "name": "Yi Zhou", "url": "https://www.linkedin.com/in/yi-z-b9698ba0/", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Junseo Kim", "url": "https://kimjunseo.com/", "affiliation": {"@type": "Organization", "name": "Delft University of Technology"}},
+      {"@type": "Person", "name": "Lukman Ismaila", "url": "https://ismailukman.github.io/", "affiliation": {"@type": "Organization", "name": "Johns Hopkins University School of Medicine"}},
+      {"@type": "Person", "name": "Naome Etori", "url": "https://www.linkedin.com/in/naome22/", "affiliation": {"@type": "Organization", "name": "University of Minnesota Twin Cities"}},
+      {"@type": "Person", "name": "Mehul Agarwal", "url": "https://mehul.al/", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Zhixuan Liu", "url": "https://ariannaliu.github.io/", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}},
+      {"@type": "Person", "name": "Jihie Kim", "url": "https://sites.google.com/view/jihiekim/", "affiliation": {"@type": "Organization", "name": "Dongguk University"}},
+      {"@type": "Person", "name": "Jean Oh", "url": "https://www.cs.cmu.edu/~jeanoh/", "affiliation": {"@type": "Organization", "name": "Carnegie Mellon University"}}
     ],
     "datePublished": "2025-10-20",
-    "publisher": {
-      "@type": "Organization",
-      "name": "arXiv"
-    },
-    "url": "https://cmubig.github.io/ECB/",
-    "image": "https://cmubig.github.io/ECB/static/images/introduction/intro.png",
-    "keywords": ["generative AI", "cultural bias", "text-to-image", "image-to-image editing", "fairness", "evaluation"],
-    "abstract": "We audit text-to-image and image-to-image models across six countries, eight categories, and era-aware prompts, combining automatic scores, a retrieval-augmented culture-aware metric, and native expert judgments to expose recurring cultural blindspots. The benchmark and full image corpus are released with prompts and settings to support reproducible cultural audits of generative systems.",
-    "citation": "@article{seo2025exposing,\n  title={Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models},\n  author={Seo, Huichan and Choi, Sieun and Hong, Minki and Zhou, Yi and Kim, Junseo and Ismaila, Lukman and Etori, Naome and Agarwal, Mehul and Liu, Zhixuan and Kim, Jihie and Oh, Jean},\n  year={2025},\n  url={https://arxiv.org/abs/2510.20042}\n}",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://cmubig.github.io/ECB/"
-    },
+    "dateModified": "2026-02-19",
+    "publisher": {"@type": "Organization", "name": "arXiv"},
+    "inLanguage": "en",
+    "keywords": ["cultural bias", "generative AI", "text-to-image", "image-to-image editing", "fairness", "evaluation", "responsible AI", "cultural representation"],
+    "abstract": "Generative image models produce striking visuals yet often misrepresent culture. Prior work has probed cultural dimensions primarily in text-to-image (T2I) systems, leaving image-to-image (I2I) editors largely underexamined. We close this gap with a unified, reproducible evaluation spanning six countries, an 8-category/36-subcategory schema, and era-aware prompts, auditing both T2I generation and I2I editing under a standardized, reproducible protocol that yields comparable model-level diagnostics. Using open models with fixed configurations, we derive comparable diagnostics across countries, eras, and categories for both T2I and I2I. Our evaluation combines standard automatic measures, a culture-aware metric that integrates retrieval-augmented VQA with curated knowledge, and expert human judgments collected on a web platform from country-native reviewers. To enable downstream analyses without re-running compute-intensive pipelines, we release the complete image corpus from both studies alongside prompts and settings.",
     "about": [
+      {"@type": "Thing", "name": "Generative image models"},
+      {"@type": "Thing", "name": "Cultural bias in AI"},
+      {"@type": "Thing", "name": "Responsible AI"}
+    ],
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage (AEO - helps AI engines cite this work) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@type": "Thing",
-        "name": "Generative image models"
+        "@type": "Question",
+        "name": "How do generative image models exhibit cultural bias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generative image models exhibit cultural bias through three key patterns: (1) Global-North defaults, where country-agnostic prompts converge to U.S.-centric, modern aesthetics even with controlled schema and era cues; (2) shortcut editing, where iterative edits substitute palette shifts and flags for genuine cultural attributes; and (3) demographic skew, where gender-neutral occupation prompts surface male dominance and light skin tones. These findings come from an audit across six countries (US, India, Japan, Korea, Nigeria, Mexico)."
+        }
       },
       {
-        "@type": "Thing", 
-        "name": "Responsible AI"
+        "@type": "Question",
+        "name": "What is the culture-aware metric for evaluating generative AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The culture-aware metric is a retrieval-augmented VQA evaluation that integrates Wikipedia-derived cultural knowledge via FAISS retrieval with Qwen2 question answering. It agrees with country-native reviewers on 74% of best selections and 84% of worst selections, capturing cultural erosion that generic scores like CLIPScore and aesthetic metrics overlook."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do image-to-image editors preserve cultural fidelity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Iterative I2I editing erodes cultural fidelity even when conventional metrics remain flat or improve. Models tend to apply superficial cues (palette shifts, generic props) rather than context- and era-consistent changes, frequently retaining source identity for Global-South targets and drifting toward non-photorealistic styles. Five successive cultural editing instructions cause outputs to collapse to a homogenized aesthetic irrespective of the target locale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Exposing Cultural Blindspots (ECB) benchmark?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ECB is a unified, reproducible evaluation benchmark spanning six countries, an 8-category/36-subcategory schema, and era-aware prompts (traditional, modern, era-agnostic). It audits both T2I generation and I2I editing under a standardized protocol, combining automatic measures, a culture-aware metric, and expert human judgments from country-native reviewers. The benchmark, complete image corpus, prompts, and evaluation platform are publicly released."
+        }
       }
     ]
   }
   </script>
-  
-  <!-- Website/Organization Structured Data -->
+
+  <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Exposing Blindspots Project",
-    "url": "https://github.com/cmubig/ECB",
+    "name": "CMU BigLab",
+    "url": "https://github.com/cmubig",
     "sameAs": [
       "https://github.com/cmubig",
       "https://github.com/cmubig/ECB"
@@ -654,7 +617,7 @@
       <pre id="bibtex-code"><code>@article{seo2025exposing,
   title={Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models},
   author={Seo, Huichan and Choi, Sieun and Hong, Minki and Zhou, Yi and Kim, Junseo and Ismaila, Lukman and Etori, Naome and Agarwal, Mehul and Liu, Zhixuan and Kim, Jihie and Oh, Jean},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2510.20042},
   year={2025},
   url={https://arxiv.org/abs/2510.20042}
 }</code></pre>
