@@ -411,6 +411,18 @@ body {
   background: var(--background-secondary);
   border-top: 1px solid var(--border-color);
   padding: 3rem 1.5rem;
+  overflow: hidden;
+}
+
+.footer .mb-4 {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.footer .mb-4 iframe,
+.footer .mb-4 img {
+  max-width: 100%;
+  height: auto;
 }
 
 .footer .content {
