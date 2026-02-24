@@ -207,8 +207,19 @@
   }
   </script>
 </head>
-<body>
+<body class="has-banner">
 
+  <!-- Contributor CTA Banner -->
+  <div class="contributor-banner" id="contributorBanner">
+    <span class="banner-pulse"></span>
+    <span class="banner-text">
+      <span>We're expanding WorldCCUB to more countries — native contributors needed!</span>
+      <a href="https://forms.gle/cdbPQTzGwDTLF7mNA" target="_blank" rel="noopener" class="banner-cta">
+        Join as Contributor <i class="fas fa-arrow-right"></i>
+      </a>
+    </span>
+    <button class="banner-close" onclick="document.getElementById('contributorBanner').remove(); document.body.classList.remove('has-banner');" aria-label="Dismiss banner">&times;</button>
+  </div>
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
@@ -246,14 +257,14 @@
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
-        <div class="work-item" style="opacity: 0.6; cursor: not-allowed;">
+        <a href="https://github.com/cmubig/ECB" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Code & Evaluation Assets</h5>
             <p>Reproducible pipelines, prompts, and metric implementations.</p>
-            <span class="work-venue">GitHub - Coming Soon</span>
+            <span class="work-venue">GitHub</span>
           </div>
-          <i class="fas fa-lock"></i>
-        </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -314,13 +325,14 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <span class="link-block has-tooltip has-tooltip-arrow has-tooltip-bottom" data-tooltip="Coming soon">
-                <button class="external-link button is-normal is-rounded is-dark is-disabled" disabled>
+              <span class="link-block">
+                <a href="https://github.com/cmubig/ECB" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>Code &amp; Data</span>
-                </button>
+                </a>
               </span>
               <span class="link-block has-tooltip has-tooltip-arrow has-tooltip-bottom" data-tooltip="Coming soon">
                 <button class="external-link button is-normal is-rounded is-dark is-disabled" disabled>

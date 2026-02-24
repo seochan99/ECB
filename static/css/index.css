@@ -877,3 +877,116 @@ a:focus {
     max-height: 240px;
   }
 }
+
+/* ── Contributor CTA Banner ── */
+.contributor-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  animation: bannerSlideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes bannerSlideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.contributor-banner .banner-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #34d399;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+}
+
+.contributor-banner .banner-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contributor-banner .banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  white-space: nowrap;
+}
+
+.contributor-banner .banner-cta:hover {
+  background: #fff;
+  color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contributor-banner .banner-close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.contributor-banner .banner-close:hover {
+  color: #fff;
+}
+
+body.has-banner {
+  padding-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .contributor-banner {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 40px 10px 16px;
+    font-size: 13px;
+  }
+
+  .contributor-banner .banner-cta {
+    font-size: 13px;
+    padding: 5px 14px;
+  }
+
+  body.has-banner {
+    padding-top: 80px;
+  }
+}
