@@ -3,7 +3,7 @@
 > Paper by Huichan Seo*, Sieun Choi*, Minki Hong*, Yi Zhou, Junseo Kim, Lukman Ismaila, Naome Etori, Mehul Agarwal, Zhixuan Liu, Jihie Kim, Jean Oh
 > Institutions: Carnegie Mellon University, Dongguk University, Delft University of Technology, Johns Hopkins University School of Medicine, University of Minnesota Twin Cities
 > arXiv: https://arxiv.org/abs/2510.20042
-> Project Page: https://cmubig.github.io/ECB/
+> Project Page: https://seochan99.github.io/ECB/
 > Dataset: https://huggingface.co/datasets/seochan99/ecb-datasets
 
 ## Summary

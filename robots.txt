@@ -30,4 +30,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://cmubig.github.io/ECB/sitemap.xml
+Sitemap: https://seochan99.github.io/ECB/sitemap.xml

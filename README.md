@@ -1,6 +1,6 @@
 # Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models
 
-**[Project Page](https://cmubig.github.io/ECB/)** | **[arXiv](https://arxiv.org/abs/2510.20042)** | **[Dataset](https://huggingface.co/datasets/seochan99/ecb-datasets)**
+**[Project Page](https://seochan99.github.io/ECB/)** | **[arXiv](https://arxiv.org/abs/2510.20042)** | **[Dataset](https://huggingface.co/datasets/seochan99/ecb-datasets)**
 
 > We audit text-to-image and image-to-image models across six countries, combining automatic scores, a retrieval-augmented culture-aware metric, and native expert judgments to expose recurring cultural blindspots in generative image systems.
 
@@ -21,7 +21,7 @@
 
 | Resource | Status |
 |----------|--------|
-| [Project Page](https://cmubig.github.io/ECB/) | Available |
+| [Project Page](https://seochan99.github.io/ECB/) | Available |
 | [arXiv](https://arxiv.org/abs/2510.20042) | Available |
 | [Dataset](https://huggingface.co/datasets/seochan99/ecb-datasets) | Available |
 | Code & Evaluation Assets | Coming Soon |
